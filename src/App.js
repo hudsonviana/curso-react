@@ -1,16 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloWord from './components/HelloWord';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const nome = 'Hudson Andrade Viana';
-  const url = 'https://via.placeholder.com/150';
+  const nome = 'Maria';
   return (
     <div className="App">
-      <h1>Meu Primeiro App em React</h1>
-      <p>Olá, {nome.toUpperCase()}!</p>
-      <img src={url} />
-      <HelloWord />
+      {/* <HelloWord /> */}
+      <SayMyName nome="Eliane" />
+      <SayMyName nome="Leppy" />
+      <SayMyName nome={nome} />
+      <Pessoa 
+        nome="Hudson" 
+        idade="36" 
+        profissao="estudante" 
+        foto="https://via.placeholder.com/120" 
+      />
     </div>
   );
 }
