@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Testado Evento de click</h1>
-      <Evento numero={1} />
-      <Evento numero={2} />
+      <Evento />
       <Form />
     </div>
   );
