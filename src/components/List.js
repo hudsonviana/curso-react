@@ -5,10 +5,12 @@ function List() {
         <>
             <h1>Minha primeira lista</h1>
             <ul>
-                <Item marca="Chevrolet" />
-                <Item marca="Ford" />
-                <Item marca="Volkswagen" />
-                <Item marca="Fiat" />
+                <Item marca="Chevrolet" lancamento={2014} />
+                <Item marca="Ford" lancamento={1998} />
+                <Item marca="Volkswagen" lancamento={2012} />
+                <Item marca="Fiat" lancamento={1995} />
+                <Item lancamento={2004} />
+                <Item marca="Hyundai" />
             </ul>
         </>
     );
